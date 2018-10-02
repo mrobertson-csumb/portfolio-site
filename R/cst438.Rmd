@@ -1,0 +1,9 @@
+---
+title: "CST 438: Software Engineering"
+---
+```{r, child="_logo.Rmd"}
+```
+
+#Course Description
+
+#Project

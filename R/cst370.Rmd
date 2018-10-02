@@ -1,0 +1,9 @@
+---
+title: "CST 370: Algorithms"
+---
+```{r, child="_logo.Rmd"}
+```
+
+#Course Description
+
+#Project

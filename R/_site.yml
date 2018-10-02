@@ -1,0 +1,40 @@
+name: "MBR's ILP Portfolio"
+navbar:
+  title: "MBR's ILP Portfolio"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "CSUMB CS Online"
+      menu:
+      - text: "CST 205: Multimedia Design and Programming"
+        href: cst205.html
+      - text: "CST 300: Major ProSeminar"
+        href: cst300.html
+      - text: "CST 311: Introduction to Computer Networking"
+        href: cst311.html
+      - text: "CST 325: Graphics Programming"
+        href: cst325.html
+      - text: "CST 336: Internet Programming"
+        href: cst336.html
+      - text: "CST 338: Software Design"
+        href: cst338.html
+      - text: "CST 361S: CS and Community Service"
+        href: cst361s.html
+      - text: "CST 363: Database Management"
+        href: cst363.html
+      - text: "CST 370: Algorithms"
+        href: cst370.html
+      - text: "CST 438: Software Engineering"
+        href: cst438.html
+      - text: "CST 499: Directed Group Capstone"
+        href: cst499.html
+
+
+output:
+  html_document:
+    theme: flatly
+    highlight: textmate
+    fig_caption: false
+
+output_dir: "../out/site"
+

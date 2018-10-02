@@ -1,0 +1,40 @@
+---
+title: "About Me"
+---
+```{r, child="_logo.Rmd"}
+```
+
+```
+  __  __         _    _    _                       ____         _                  _
+ |  \/  |  __ _ | |_ | |_ | |__    ___ __      __ |  _ \  ___  | |__    ___  _ __ | |_  ___   ___   _ __
+ | |\/| | / _` || __|| __|| '_ \  / _ \\ \ /\ / / | |_) |/ _ \ | '_ \  / _ \| '__|| __|/ __| / _ \ | '_ \
+ | |  | || (_| || |_ | |_ | | | ||  __/ \ V  V /  |  _ <| (_) || |_) ||  __/| |   | |_ \__ \| (_) || | | |
+ |_|  |_| \__,_| \__| \__||_| |_| \___|  \_/\_/   |_| \_\\___/ |_.__/  \___||_|    \__||___/ \___/ |_| |_|
+```
+
+# Bio
+I am a student at CSUMB. I have been working on personal projects (mostly android & scala)
+In the past I have served in United States Marine Corps, worked as a QA / Automation Engineer and worked as a Product Manager.
+
+
+# Goals
+My educational goals are:
+
+- Bachelor's Degree in Computer Science
+- Master's Degree in Software Engineering or Computer Science (if necessary)
+- Doctorate in Software Engineering, Computer Science and/or Education
+
+
+My professional goal is to attain a tenure-track professorship. I am keenly interested in focused research on information science tools and methods development to further the field of education.
+
+
+# CSUMB CS Online Bachelor's Degree Program
+The CS Online degree completion program from California State University, Monterey Bay offers a unique blend of computer science theory and hands-on information technology practice.
+
+This combination results in graduates exceptionally prepared to participate in the fast-paced information economy in jobs like:
+
+    Software engineer
+    Mobile app developer
+    Technology project manager
+
+While at CSUMB, students connect regularly with faculty, practicing professionals, and other motivated students in interactive learning experiences and collaborative projects.

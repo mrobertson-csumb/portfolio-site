@@ -1,0 +1,9 @@
+---
+title: "CST 499: Directed Group Capstone"
+---
+```{r, child="_logo.Rmd"}
+```
+
+#Course Description
+
+#Project

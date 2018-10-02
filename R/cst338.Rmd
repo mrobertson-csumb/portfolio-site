@@ -1,0 +1,9 @@
+---
+title: "CST 338: Software Design"
+---
+```{r, child="_logo.Rmd"}
+```
+
+#Course Description
+
+#Project

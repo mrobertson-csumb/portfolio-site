@@ -1,0 +1,9 @@
+---
+title: "CST 325: Graphics Programming"
+---
+```{r, child="_logo.Rmd"}
+```
+
+#Course Description
+
+#Project

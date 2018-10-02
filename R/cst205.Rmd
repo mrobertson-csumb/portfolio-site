@@ -1,0 +1,9 @@
+---
+title: "CST 205: Multimedia Design and Programming"
+---
+```{r, child="_logo.Rmd"}
+```
+
+#Course Description
+
+#Project

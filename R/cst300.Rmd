@@ -1,0 +1,12 @@
+---
+title: "CST 300: Major ProSeminar"
+---
+```{r, child="_logo.Rmd"}
+```
+
+#Course Description
+Helps students identify and articulate personal, professional, and social goals. Provides an integrated overview of the computer science and communication design majors and their requirements. Students develop a plan for their learning goals. Students learn writing, presentation, research and critical-thinking skills within the diversified fields of information technology and communication design. Students learn how to analyze, predict, and articulate trends in the academic, public service.
+
+
+#Project
+[Industry Analysis Essay](./res/CST300L_Robertson_Paper1.docx)
