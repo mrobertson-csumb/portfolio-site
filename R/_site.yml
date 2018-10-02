@@ -36,5 +36,5 @@ output:
     highlight: textmate
     fig_caption: false
 
-output_dir: "../out/site"
+output_dir: "../site"
 
