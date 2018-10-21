@@ -38,3 +38,6 @@ output:
 
 output_dir: "../site"
 
+# ghpages URL: https://mrobertson-csumb.github.io/portfolio-site
+# to deploy to gh-pages"
+## git subtree push --prefix site origin gh-pages
