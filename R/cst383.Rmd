@@ -1,0 +1,9 @@
+---
+title: "CST 383 Introduction to Data Science"
+---
+```{r, child="_logo.Rmd"}
+```
+
+#Course Description
+
+#Project

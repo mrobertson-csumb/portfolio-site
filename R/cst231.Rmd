@@ -1,0 +1,9 @@
+---
+title: "CST 231: Problem Solving and Programming C++"
+---
+```{r, child="_logo.Rmd"}
+```
+
+#Course Description
+
+#Project

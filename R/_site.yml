@@ -4,7 +4,25 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "CSUMB CS Online"
+    - text: "Lower Division"
+      menu:
+      - text: "CST 231: Problem Solving and Programming C++"
+        href: cst231.html
+      - text: "CST 234: Operating Systems"
+        href: cst234.html
+      - text: "CST 237: Computer Architecture"
+        href: cst237.html
+      - text: "CST 238: Introduction to Data Structures"
+        href: cst238.html
+      - text: "MATH 130: Precalculus"
+        href: math130.html
+      - text: "MATH 150: Calculus 1"
+        href: math150.html
+      - text: "MATH 151: Calculus 2"
+        href: math151.html
+      - text: "MATH 170: Discrete Math"
+        href: math170.html
+    - text: "Major Requirements"
       menu:
       - text: "CST 205: Multimedia Design and Programming"
         href: cst205.html
@@ -26,9 +44,16 @@ navbar:
         href: cst370.html
       - text: "CST 438: Software Engineering"
         href: cst438.html
+    - text: "Electives"
+      menu:
+      - text: "CST 383 Introduction to Data Science"
+        href: cst383.html
+      - text: "CST 495 Special Topics"
+        href: cst495.html
+    - text: "Capstone"
+      menu:
       - text: "CST 499: Directed Group Capstone"
         href: cst499.html
-
 
 output:
   html_document:

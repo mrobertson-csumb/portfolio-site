@@ -1,0 +1,9 @@
+---
+title: "MATH 170: Discrete Math"
+---
+```{r, child="_logo.Rmd"}
+```
+
+#Course Description
+
+#Project
