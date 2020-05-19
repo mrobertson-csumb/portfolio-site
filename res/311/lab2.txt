@@ -1,0 +1,272 @@
+--- Part 1 ---
+REQUEST
+source      destination     proto   len info
+10.0.0.132	128.119.245.12	HTTP	431	GET /wireshark-labs/HTTP-wireshark-file1.html HTTP/1.1 
+
+GET /wireshark-labs/HTTP-wireshark-file1.html HTTP/1.1\r\n
+Host: gaia.cs.umass.edu\r\n
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0\r\n
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n
+Accept-Language: en-US,en;q=0.5\r\n
+Accept-Encoding: gzip, deflate\r\n
+Connection: keep-alive\r\n
+Upgrade-Insecure-Requests: 1\r\n
+\r\n
+
+
+RESPONSE
+source          destination proto   len info
+128.119.245.12	10.0.0.132	HTTP	552	HTTP/1.1 200 OK  (text/html)
+
+HTTP/1.1 200 OK\r\n
+Date: Wed, 11 Sep 2019 04:42:46 GMT\r\n
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16 mod_perl/2.0.10 Perl/v5.16.3\r\n
+Last-Modified: Tue, 10 Sep 2019 05:59:01 GMT\r\n
+ETag: "80-5922c99e2fb9f"\r\n
+Accept-Ranges: bytes\r\n
+Content-Length: 128\r\n
+Keep-Alive: timeout=5, max=100\r\n
+Connection: Keep-Alive\r\n
+Content-Type: text/html; charset=UTF-8\r\n
+\r\n
+<html>\n
+Congratulations.  You've downloaded the file \n
+http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file1.html!\n
+</html>\n
+
+#1
+Is your browser running HTTP version 1.0 or 1.1? What version of HTTP is the
+server running?
+My browser's version HTTP 1.1.
+
+in request:
+GET /wireshark-labs/HTTP-wireshark-file1.html HTTP/1.1\r\n
+                                                   ^^^------- indicates browser is running HTTP 1.1
+
+The gaia server is running HTTP 1.1
+
+in response:
+HTTP/1.1 200 OK\r\n
+     ^^^-------------- indicates server is running HTTP 1.1
+
+
+#2
+What languages (if any) does your browser indicate that it can accept to the
+server?
+
+English (US variant)
+in request
+Accept-Language: en-US,en;q=0.5\r\n
+
+
+#3
+What is the IP address of your computer? Of the gaia.cs.umass.edu server?
+my computer's local IP address is 10.0.0.132
+gaia.cs.umass.edu server's IP address is 128.119.245.12
+
+
+#4
+What is the status code returned from the server to your browser?
+The server returned an OK; status code 200.
+
+in response:
+HTTP/1.1 200 OK\r\n
+
+
+#5
+When was the HTML file that you are retrieving last modified at the server?
+It was last modified Tue, 10 Sep 2019 05:59:01 GMT.
+
+in response:
+Last-Modified: Tue, 10 Sep 2019 05:59:01 GMT\r\n
+
+
+#6
+How many bytes of content are being returned to your browser?
+There were 128 bytes of content returned to the browser.
+
+in response:
+Content-Length: 128\r\n
+
+
+#7
+By inspecting the raw data in the packet content window, do you see any headers
+within the data that are not displayed in the packet-listing window? If so, name
+one.
+
+The raw packet data contains sections for the frame, ethernet, IPv4, TCP and HTTP
+in the IPv4 section the field Time to live has a value of 64.
+
+--- Part 2 ---
+
+request 1
+
+GET /wireshark-labs/HTTP-wireshark-file1.html HTTP/1.1
+Host: gaia.cs.umass.edu
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+If-Modified-Since: Wed, 11 Sep 2019 05:18:01 GMT
+If-None-Match: "80-592402514f764"
+Cache-Control: max-age=0
+
+
+response 1
+
+HTTP/1.1 200 OK
+Date: Wed, 11 Sep 2019 05:19:08 GMT
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16 mod_perl/2.0.10 Perl/v5.16.3
+Last-Modified: Wed, 11 Sep 2019 05:19:01 GMT
+ETag: "80-5924028abc4c7"
+Accept-Ranges: bytes
+Content-Length: 128
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<html>
+
+Congratulations again!  Now you've downloaded the file lab2-2.html. <br>
+This file's last modification date will not change.  <p>
+Thus  if you download this multiple times on your browser, a complete copy <br>
+will only be sent once by the server due to the inclusion of the IN-MODIFIED-SINCE<br>
+field in your browser's HTTP GET request to the server.
+
+</html>
+
+
+request 2
+
+GET /wireshark-labs/HTTP-wireshark-file1.html HTTP/1.1
+Host: gaia.cs.umass.edu
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+If-Modified-Since: Wed, 11 Sep 2019 05:19:01 GMT
+If-None-Match: "80-5924028abc4c7"
+Cache-Control: max-age=0
+
+
+response 2
+
+HTTP/1.1 304 Not Modified
+Date: Wed, 11 Sep 2019 05:19:10 GMT
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16 mod_perl/2.0.10 Perl/v5.16.3
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=99
+ETag: "80-5924028abc4c7"
+
+
+
+
+#8
+Inspect the contents of the first HTTP GET request from your browser to the
+server. Do you see an “IF-MODIFIED-SINCE” line in the HTTP GET?
+
+Yes, it was included.
+in request 1:
+If-Modified-Since: Wed, 11 Sep 2019 05:18:01 GMT
+
+
+#9
+Inspect the contents of the server response. Did the server explicitly return the
+contents of the file? How can you tell?
+
+
+The server explicitly returned the file contents.
+It is known since the response code was 200 OK and the response body was populated
+
+in response 1:
+HTTP/1.1 200 OK
+
+
+#10
+Now inspect the contents of the second HTTP GET request from your browser to
+the server. Do you see an “IF-MODIFIED-SINCE:” line in the HTTP GET? If
+so, what information follows the “IF-MODIFIED-SINCE:” header?
+
+IF-MODIFIED-SINCE is present in the request.
+The header field `If-None-Match: "80-5924028abc4c7"` follows that field.
+
+in request 2:
+If-Modified-Since: Wed, 11 Sep 2019 05:19:01 GMT
+If-None-Match: "80-5924028abc4c7"
+
+
+#11
+What is the HTTP status code and phrase returned from the server in response to
+this second HTTP GET? Did the server explicitly return the contents of the file?
+Explain.
+
+The server responded with the HTTP status code 304 Not Modified in response to the second HTTP GET. 
+The server did not explicitly return the contents of the file since it had not changed since that last request which is already in the cache.
+
+in response 2:
+HTTP/1.1 304 Not Modified
+
+--- Part 3 ---
+
+#12
+How many HTTP GET request messages did your browser send? Which packet
+number in the trace contains the GET message for the Bill or Rights?
+
+The browser sent one get request for the Bill of Rights (packet 7).
+
+#13
+Which packet number in the trace contains the status code and phrase associated
+with the response to the HTTP GET request?
+
+Packet 15 contains the server response code for that GET request.
+
+
+#14
+What is the status code and phrase in the response?
+
+The response code and phrase for that request was 200 OK.
+
+#15
+How many data-containing TCP segments were needed to carry the single HTTP
+response and the text of the Bill of Rights?
+
+Four TCP segments were reassembled for that single HTTP response.
+
+
+--- Part 4 ---
+
+#16
+How many HTTP GET request messages did your browser send? To which
+Internet addresses were these GET requests sent?
+
+Three HTTP GET requests were sent.
+4	0.101719878	10.0.0.132	128.119.245.12	HTTP	474	GET /wireshark-labs/HTTP-wireshark-file4.html HTTP/1.1 
+8	0.276705945	10.0.0.132	128.119.245.12	HTTP	442	GET /pearson.png HTTP/1.1 
+12	0.369759592	10.0.0.132	128.119.245.12	HTTP	456	GET /~kurose/cover_5th_ed.jpg HTTP/1.1 
+
+
+#17
+Can you tell whether your browser downloaded the two images serially, or
+whether they were downloaded from the two web sites in parallel? Explain.
+
+The browser downloaded the images in parallel. I know that since the webbrowser's network panel shows a time-series graph of the request and response times. Clearly in the graph the two image requests are initiated almost simultaneously. Also, in wireshark, the subsequent requests are made without waiting on responses being received.
+
+--- Part 5 ---
+
+#18
+What is the server’s response (status code and phrase) in response to the initial
+HTTP GET message from your browser?
+
+The server's initial response is 401 Unauthorized.
+
+
+#19
+When your browser’s sends the HTTP GET message for the second time, what
+new field is included in the HTTP GET message?
+
+In the second request, the HTTP GET contains the Authorization header field.
+
