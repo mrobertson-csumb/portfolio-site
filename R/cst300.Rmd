@@ -9,11 +9,9 @@ Helps students identify and articulate personal, professional, and social goals.
 
 
 
-#Projects
-[Industry Analysis Essay](./res/300/CST300L_Paper1.docx)
+##Projects
 
-[Ethics Argument Essay](./res/300/CST300L_Paper2.docx)
-
-[Video project (technical)](https://youtu.be/cFQPIlNsJAQ)
-
-[Video project (general)](https://youtu.be/qc1yVGediX0)
+- [Industry Analysis Essay](./res/300/paper1.docx)
+- [Ethics Argument Essay](./res/300/paper2.docx)
+- [Video project (technical)](https://youtu.be/cFQPIlNsJAQ)
+- [Video project (general)](https://youtu.be/qc1yVGediX0)

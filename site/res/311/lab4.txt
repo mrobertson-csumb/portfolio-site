@@ -1,0 +1,79 @@
+download a packet trace with UDP packets
+	http://gaia.cs.umass.edu/wireshark-labs/wireshark-traces.zip
+
+Lab 4
+In wireshark
+
+Start capture
+	wait for some UDP packets to show up
+	probably your computer's SNMP will automattically send some UDP packets
+		Simple Network Management Protocol
+
+Stop capture
+	filter to UDP sent & received
+	look at details for one of them
+
+hand in a copy of the trace
+	annotate with answer
+	File > Print
+		Selected Packet, summary
+
+Questions
+Choose one UDP packet.
+1.
+	In the packet, how many fields are in the UDP header?
+	Name the fields.
+
+	There are four fields.
+		Source Port: 4334
+		Destination Port: 161
+		Length: 58
+		Checksum: 0x65f8
+
+2.
+	For each UDP header field, what is its length in bytes?
+
+	The length of each header field is 2 bytes.
+
+3. 
+	The length field represents the length of what?		
+	Verify your claim with your captured UDP packet.
+
+	The UDP length field describes the size of the entire datagram in bytes.
+	This includes both the header and payload.
+	For the selected packet, the Length field is 58.
+	The header fields together are 8 bytes; the payload is 50 bytes; the overall size is 58 bytes.
+
+
+4.
+	What is the max UDP payload in bytes?
+	(see answer 2 for help)
+
+	The size of a UDP header field is 2 bytes. the highest length (2 byte) value is 0xffff (65535 in decimal)
+	The size of all UDP header fields is 8 bytes.
+	65535 - 8 = 65527
+	So the largest payload would be 65527 bytes.
+
+5.
+	What is the largest possible source port number?
+	(see answer 2 for help)
+
+	The size of a UDP header field is 2 bytes. the highest length (2 byte) value is 0xffff (65535 in decimal)
+	That correlates with the greatest numbered port: 65535.
+6.
+	What is UDP's protocol number
+		in hex?
+		in decimal?
+	(see fig 4.13 for help)
+
+	UDP's IP protocol number is 17 in decimal, 0x11 in hexadecimal.
+
+
+7.
+	Look at a request/response pair of UDP packets.
+	How are the port numbers related in the two packets?
+
+	For the request, the source port was 4334 and the destination was 161.
+	For the response, the source port was 161 and the destination was 4334.
+
+	For both request and response the sending and receiving ports were the same.

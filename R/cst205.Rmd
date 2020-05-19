@@ -5,5 +5,10 @@ title: "CST 205: Multimedia Design and Programming"
 ```
 
 #Course Description
+Introduces design, creation, and manipulation of interactive applications and electronic media for communication purpose. Focuses on creating media, understanding media concepts, and manipulating the created media using basic programming concepts of control flow, functions, expressions and data types in the Python language. Students acquire a basic understanding for digital media formats, how to design, create such media using basic programming skills.
 
-#Project
+##Projects
+
+- [Adventure Game (3 versions)](https://github.com/csumb-serious-business/18-FallB-205-Lab11)
+- [Manipulated Image Portfolio](https://mrobertson-csumb.github.io/205-image-portfolio/)
+- [Morse Code Trainer](https://github.com/csumb-serious-business/18-FallB-205-FinalProject)

@@ -5,5 +5,10 @@ title: "CST 231: Problem Solving and Programming C++"
 ```
 
 #Course Description
+This is an introductory programming course to develop problem-solving techniques for numerical and non-numerical problems from various disciplines. Students will design the solution to each problem and implement it in the C++ programming language. Coverage includes introduction to computer system, C++ basics, flow control, functions, I/O streams, arrays, strings, and classes.
 
-#Project
+
+### This course requirement was fulfilled at [Foothill College](https://www.foothill.edu) with [CIS 15A](https://foothill.edu/publications/archives/Catalog_2011-12.pdf)
+
+**Final Grade: A**
+

@@ -5,5 +5,8 @@ title: "MATH 130: Precalculus"
 ```
 
 #Course Description
+Functions and graphs, including polynomial, rational, exponential, logarithmic, and trigonometric functions. Applications, data analysis, mathematical modeling, and analytic trigonometry.
 
-#Project
+### This course requirement was fulfilled at [Fresno City College](https://www.fresnocitycollege.edu/) with [Math 4B](https://www.fresnocitycollege.edu/uploaded-files/documents/admissions-aid/catalogs/2006-2008_catalog.pdf)
+
+**Final Grade: A**

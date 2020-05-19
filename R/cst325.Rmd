@@ -5,5 +5,13 @@ title: "CST 325: Graphics Programming"
 ```
 
 #Course Description
+This course teaches the students the fundamentals of game programming and skills needed for game development, including GPU programming, matrix and quaternion algebra for physics calculation, animation, lighting and basics of implementing 3D models into a framework.
 
-#Project
+##Projects
+- [WebGL RayTracer](https://github.com/mrobertson-csumb/cst325-w2)
+- [Matrix Transformations](./res/325/matrix.zip)
+- [WebGL scene](./res/325/webgl.zip)
+- [WebGL shaders](./res/325/shaders.zip)
+- [Phong shading](./res/325/phong.zip)
+- [Shadow Mapping](./res/325/shadow-mapping.zip)
+- [Final](./res/325/final.zip)

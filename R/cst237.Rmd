@@ -5,5 +5,8 @@ title: "CST 237: Computer Architecture"
 ```
 
 #Course Description
+This course introduces computer architectures and computer systems management. Includes data representation, memory, registers, and internals of common computers and system interfaces. Knowledge of C/C++ programming helpful but not mandatory.
 
-#Project
+### This course requirement was fulfilled at [Foothill College](https://www.foothill.edu) with [C S 10](https://foothill.edu/publications/archives/Catalog_2018-19.pdf)
+
+**Final Grade: A**

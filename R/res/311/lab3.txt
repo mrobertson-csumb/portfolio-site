@@ -1,0 +1,165 @@
+=== question 1 ================================================================
+Run nslookup to obtain the IP address of a Web server in Asia. What is its IP address?
++screenshot
+
+nslookup ntu.edu.sg
+
+155.69.7.173
+
+
+=== question 2 ================================================================
+Run nslookup to determine the authoritative DNS servers for a university in Europe. What is its IP address.
++screenshot
+
+nslookup -type=NS ena.fr
+
+ena.fr  nameserver = indom80.indomco.hk.
+ena.fr  nameserver = indom20.indomco.net.
+ena.fr  nameserver = indom10.indomco.com.
+
+127.0.0.53
+
+
+=== question 3 ================================================================
+Run nslookup so that one of the DNS servers obtained in Question 2 is queried for the mail servers for Yahoo! mail. What is its IP address?
++screenshot
+
+nslookup mail.yahoo.com indom10.indomco.com
+
+The IP address was not found.
+
+98.136.96.80
+
+
+=== question 4 ================================================================
+Locate the DNS query and response messages. Are then sent over UDP or TCP?
+
+UDP
+
+
+=== question 5 ================================================================
+What is the destination port for the DNS query message? What is the source port of DNS response message?
++screenshot
+
+The destination port for the query was 53.
+The source port for the response was 53.
+
+
+=== question 6 ================================================================
+To what IP address is the DNS query message sent? Use ipconfig to determine the IP address of your local DNS server. Are these two IP addresses the same?
++screenshot
+
+I run kde neon (a linux distribution) so ipconfig does not exist on this computer. The ifconfig command does not provide the DNS information instead I use the command:
+nmcli device show wlp5s0
+
+nmcli is the commanline tool for the network manager
+wlp5s0 is the wireless network
+
+The DNS query message was sent to 75.75.76.76, the same as IPB.DNS[2] (one of the default DNS servers).
+
+=== question 7 ================================================================
+Examine the DNS query message. What “Type” of DNS query is it? Does the query message contain any “answers”?
++screenshot
+
+There were 2 DNS query messages for www.ietf.org.
+One query was type A, the other was type AAAA.
+There are no answers in either message.
+
+(See MRobertson_L3_q05.pdf in question 5 for details)
+
+=== question 8 ================================================================
+Examine the DNS response message. How many “answers” are provided? What do each of these answers contain?
++screenshot
+
+There were 2 DNS response messages for www.ietf.org.
+
+The response to the type A query had three answers, one CNAME and two A records.
+The response to the type AAAA query had three answers, one CNAME and two AAAA records.
+
+Each answer contains a hostname, record type, record class, time-to-live and data length.
+The CNAME type record contains a cannonical name for an alias.
+The A type records contain a host IP address.
+
+(See MRobertson_L3_q05.pdf in question 5 for details)
+
+=== question 9 ================================================================
+Consider the subsequent TCP SYN packet sent by your host. Does the destination IP address of the SYN packet correspond to any of the IP addresses provided in the DNS response message?
++screenshot
+
+Yes, it corresponds to one IPv6 address that was in the response to the AAAA DNS query.
+
+
+=== question 10 ===============================================================
+This web page contains images. Before retrieving each image, your host issued new DNS queries.
+No
+
+=== question 11 ===============================================================
+What is the destination port for the DNS query message? What is the source port of DNS response message?
++screenshot
+
+The destination port for the query was 53.
+The source port for the response was 53.
+
+
+=== question 12 ===============================================================
+To what IP address is the DNS query message sent? Is this the IP address of your default local DNS server?
++screenshot
+
+I run kde neon (a linux distribution) so ipconfig does not exist on this computer. The ifconfig command does not provide the DNS information instead I use the command:
+nmcli device show wlp5s0
+
+nmcli is the commanline tool for the network manager
+wlp5s0 is the wireless network
+
+The DNS query message was sent to 75.75.76.76, the same as IPB.DNS[2] (one of the default DNS servers).
+
+
+=== question 13 ===============================================================
+Examine the DNS query message. What “Type” of DNS query is it? Does the query message contain any “answers”?
++screenshot
+
+The query is a type A.
+There are no answers in the message.
+
+
+=== question 14 ===============================================================
+Examine the DNS response message. How many “answers” are provided? What do each of these answers contain?
++screenshot
+
+The response message contains seven answers.
+Each answer contains a hostname, record type, record class, time-to-live and data length.
+The CNAME type record contains a cannonical name for an alias.
+The A type records contain a host IP address.
+
+
+=== question 15 ===============================================================
+To what IP address is the DNS query message sent? Is this the IP address of your default local DNS server?
++screenshot
+
+The DNS query message was sent to 75.75.76.76, the same as IPB.DNS[2] (one of the default DNS servers).
+
+=== question 16 ===============================================================
+Examine the DNS query message. What “Type” of DNS query is it? Does the query message contain any “answers”?
++screenshot TODO
+
+There are two queries, one A type and one AAAA type. Neither query contains answers.
+
+=== question 17 ===============================================================
+Examine the DNS response message. What MIT nameservers does the response message provide? Does this response message also provide the IP addresses of the MIT nameservers?
++screenshot
+
+=== question 18 ===============================================================
+To what IP address is the DNS query message sent? Is this the IP address of your default local DNS server? If not, what does the IP address correspond to?
++screenshot
+
+For both DNS queries, the message was sent to 75.75.76.76, the same as IPB.DNS[2] (one of the default DNS servers).
+
+=== question 19 ===============================================================
+Examine the DNS query message. What “Type” of DNS query is it? Does the query message contain any “answers”?
++screenshot
+
+There are two queries, one A type and one AAAA type. Neither query contains answers.
+
+=== question 20 ===============================================================
+Examine the DNS response message. How many “answers” are provided? What does each of these answers contain?
++screenshot

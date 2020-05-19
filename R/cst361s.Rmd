@@ -5,5 +5,9 @@ title: "CST 361S: CS and Community Service"
 ```
 
 #Course Description
+A service learning course in which students apply computer literacy, multimedia design, and technology to assist schools, nonprofit organizations, and community agencies. The theme for the course is "Bridging the Digital Divide." Note: students must participate in required service placements with hours to be arranged. (Offered every semester.)
 
-#Project
+##Project
+
+- For [CALGE]() a ["Yelp for Montessori Schools"](./res/361s/calge-django.zip) web application
+- [Project Documentary](https://www.youtube.com/watch?v=6P8nWdqnzYk)

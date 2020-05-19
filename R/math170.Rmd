@@ -5,5 +5,6 @@ title: "MATH 170: Discrete Math"
 ```
 
 #Course Description
+Includes sets and sequences, elementary logic, relations, induction, counting principles, discrete probability, Boolean algebra, logic networks, matrices, graph theory, and trees. Applies these topics to real life and branches of science, particularly computer science.
 
-#Project
+### This course requirement has not yet been completed

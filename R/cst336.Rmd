@@ -5,5 +5,9 @@ title: "CST 336: Internet Programming"
 ```
 
 #Course Description
+Provides students with dynamic web application development skills, focusing on the integration of server-side programming, database connectivity, and client-side scripting. Coverage includes the Internet architecture, responsive design, RESTful web services, and Web APIs.
 
-#Project
+##Projects
+
+- [Fine Art Store Page](https://github.com/csumb-serious-business/cst336-project)
+- [Final Exam Project](https://github.com/mrobertson-csumb/cst336-final)

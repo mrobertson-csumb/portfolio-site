@@ -5,5 +5,6 @@ title: "MATH 150: Calculus 1"
 ```
 
 #Course Description
+Includes limits, continuity, derivatives including trigonometric functions, chain rule, curve sketching, extremum problems, implicit differentiation, related rates, Mean Value Theorem, logarithmic and trigonometric functions, introduction to integration, fundamental theorem of calculus, substitution, and applications.
 
-#Project
+### This course requirement has not yet been completed

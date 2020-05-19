@@ -5,5 +5,8 @@ title: "CST 238: Introduction to Data Structures"
 ```
 
 #Course Description
+Provides students with intermediate-level programming skills to make it possible for them to write clear, efficient, and high-quality code. Students learn basic data structures such as array, list, stack, queue, and tree. They also acquire several basic algorithms in programming such as searching, sorting, and recursion. Furthermore, students learn in-depth knowledge of C++ programming language such as classes, pointers, and dynamic memory management.
 
-#Project
+### This course requirement was fulfilled at [Foothill College](https://www.foothill.edu) with [C S 1C](https://foothill.edu/publications/archives/Catalog_2018-19.pdf)
+
+**Final Grade: A**

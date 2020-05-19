@@ -5,5 +5,6 @@ title: "CST 495 Special Topics"
 ```
 
 #Course Description
+Specialized study of a particular topic within the School of Information Technology and Communications Design. May be repeated for additional credit when topics vary and as subjects permit.
 
-#Project
+### This course requirement is not yet completed

@@ -5,5 +5,8 @@ title: "CST 438: Software Engineering"
 ```
 
 #Course Description
+Prepares students for large-scale software development using software engineering principles and techniques. Coverage includes software process, requirements analysis and specification, software design, implementation, testing, and project management. Students are expected to work in teams to carry out a realistic software project.
 
-#Project
+##Project
+
+- A [Customized Children's Stories](https://github.com/csumb-serious-business/personalized-storytime-stories) web application

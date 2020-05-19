@@ -5,5 +5,11 @@ title: "CST 499: Directed Group Capstone"
 ```
 
 #Course Description
+Students will work on a project in large groups (up to 5 students in each group), developing requirements specification, a solution plan followed by design and implementation of the solution. The problem statement for the projects will be selected by the faculty. Faculty will also play the role of a project manager directing the schedule and deliverables for these projects.
 
-#Project
+##Project
+
+- The [Project Proposal](./res/499/project-proposal.pdf)
+- [Savvy](https://github.com/csumb-serious-business/savvy) ⁠— a Facts-Oriented Information Manager
+
+### This course requirement is in progress

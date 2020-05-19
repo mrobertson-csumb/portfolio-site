@@ -5,5 +5,9 @@ title: "CST 338: Software Design"
 ```
 
 #Course Description
+Provides students with the fundamental concepts to develop large-scale software, focusing on the object-oriented programming techniques. Coverage includes the introduction to Java programming language, object-oriented programming, software life cycle and development processes, requirements analysis, and graphical user interface development.
 
-#Project
+##Projects
+
+- [Java/Swing Card Game](https://github.com/csumb-serious-business/19-SprB-338-M6-high-card-timed)
+- [Morse Code Trainer](./res/338/morse-code-trainer.zip) (an Android App)

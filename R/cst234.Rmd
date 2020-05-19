@@ -5,5 +5,8 @@ title: "CST 234: Operating Systems"
 ```
 
 #Course Description
+Introduces modern operating systems such as Unix and topics such as process management (creation, synchronization, and communication); processor scheduling; deadlock prevention, avoidance, and recovery; main-memory management; virtual memory management (swapping, paging, segmentation and page-replacement algorithms); control of disks and other input/output devices; file-system structure and implementation; and protection and security.
 
-#Project
+### This course requirement was fulfilled at [Foothill College](https://www.foothill.edu) with [C S 30A](https://foothill.edu/publications/archives/Catalog_2018-19.pdf)
+
+**Final Grade: A**
