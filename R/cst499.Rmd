@@ -10,6 +10,7 @@ Students will work on a project in large groups (up to 5 students in each group)
 ##Project
 
 - The [Project Proposal](./res/499/project-proposal.pdf)
+- The [Project Report](./res/499/project-proposal.pdf)
 - [Savvy](https://github.com/csumb-serious-business/savvy) ⁠— a Facts-Oriented Information Manager
 
 ### This course requirement is in progress
